@@ -21,15 +21,6 @@ Una **calculadora interactiva** desarrollada en JavaScript, HTML y CSS, que perm
 - CSS3  
 - JavaScript (Vanilla JS)  
 
----
-
-## 📸 Captura
-
-![Captura de la calculadora](./screenshot.png)  
-
-> *Tip:* Puedes agregar una captura de tu calculadora en la carpeta del proyecto como `screenshot.png`.
-
----
 
 ## 🚀 Cómo usar
 
