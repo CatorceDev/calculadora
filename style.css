@@ -1,0 +1,129 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #091f39;
+  height: 100vh;
+  position: relative;
+}
+
+.calculadora-container {
+  position: absolute;
+  width: 80vw;
+  max-width: 400px;
+  height: 80vh;
+  max-height: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1782b4;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.calculadora-results {
+  width: 100%;
+  height: 25%;
+  margin: 10px 50px 0 50px;
+  border-radius: 10px;
+  background-color: #6ccbfb;
+  box-shadow: 0 0 5px #0008;
+  padding: 20px;
+}
+
+.calculadora-results p {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.calculadora-controllers {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.calculadora-controllers button {
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #09cbe9;
+  box-shadow: 0 0 4px #000;
+  transition: filter 0.2s ease;
+}
+
+.calculadora-controllers .element-number {
+  background-color: #addaf2;
+}
+
+.element-c {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.element-delete {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.element-divide {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.element-7 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.element-8 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.element-9 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.element-multiplicate {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.element-4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.element-5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.element-6 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.element-rest {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.element-1 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.element-2 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.element-3 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.element-sum {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.element-0 {
+  grid-area: 5 / 1 / 6 / 4;
+}
+.element-equal {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+.calculadora-controllers button:hover {
+  filter: brightness(0.7);
+}
+
+.calculadora-controllers button:active {
+  filter: brightness(0.5);
+}
